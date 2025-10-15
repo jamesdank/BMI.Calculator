@@ -1,0 +1,25 @@
+:root{
+  --underweight:#6ea8fe; /* blue */
+  --normal:#3ddc97;      /* green */
+  --overweight:#f9d162;  /* yellow */
+  --obese:#ff6b6b;       /* red */
+}
+
+.bg-body{ background:#f7f8fa; }
+.card{ border-radius:1rem; }
+.result-box{ background:#fff; }
+
+#bmiChart{
+  display:block;
+  width:100% !important;
+  height:110px !important; /* a bit taller to fit readable labels */
+}
+
+/* legend dots */
+.legend-dot{ display:inline-block; width:10px; height:10px; border-radius:50%; vertical-align:middle; }
+.legend-dot.bg-underweight{ background-color:var(--underweight); }
+.legend-dot.bg-normal{ background-color:var(--normal); }
+.legend-dot.bg-overweight{ background-color:var(--overweight); }
+.legend-dot.bg-obese{ background-color:var(--obese); }
+
+.navbar-brand{ letter-spacing:.3px; }
